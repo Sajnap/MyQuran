@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyQuran</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <string name="zakkath">Zakkath Calculator</string>
+    <string name="about_app">About App</string>
+    <string name="islam">Islam</string>
+    <string name="eiman">Eiman</string>
+    <string name="quran">Quran</string>
+     <string name="adkar">Adkar</string>
+      <string name="prayer_time">Prayer Time</string>
+      <string name="my_quran">My Quran</string>
+</resources>

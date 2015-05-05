@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neww"
+    android:orientation="vertical"
+    tools:context="com.example.myquran.HomePage" >
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/islam"
+        android:textColor="#E0DA7C"
+        android:onClick="islamButton"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/quran"
+        android:onClick="quranButton"
+        android:layout_marginBottom="5dp"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/adkar"
+        android:layout_marginBottom="5dp"
+        android:textColor="#E0DA7C"
+        android:onClick="adkarButton"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/prayer_time"
+        android:layout_marginBottom="5dp"
+        android:textColor="#E0DA7C"
+        android:onClick="prayerTimebutton"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/zakkath"
+        android:onClick="zakkathButton"
+        android:layout_marginBottom="5dp"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:onClick="aboutbutton"
+        android:text="@string/about_app"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp" />
+
+</LinearLayout>
