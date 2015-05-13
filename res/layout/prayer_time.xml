@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Fajr"
+            android:text="@string/fajr"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Subahi"
+            android:text="@string/subahi"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Duhr"
+            android:text="@string/lohar"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -124,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Asr"
+            android:text="@string/asr"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -159,7 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Maghrib"
+            android:text="@string/maghrib"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -194,7 +194,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Isha"
+            android:text="@string/isha"
             android:textColor="#5F8EBF"
             android:textSize="20sp"
             android:textStyle="bold" />

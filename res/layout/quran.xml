@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bodyy"
+    android:orientation="vertical"
+    tools:context="com.example.myquran.HomePage" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sura_names"
+        android:textColor="#5F8EBF"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/my_main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/lay1">
+    </ListView>
+
+</LinearLayout>

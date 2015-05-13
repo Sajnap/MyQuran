@@ -4,13 +4,23 @@
     <string name="app_name">MyQuran</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-	
-    <string name="zakkath">Zakkath Calculator</string>
-    <string name="about_app">About App</string>
-    <string name="islam">Islam</string>
-    <string name="eiman">Eiman</string>
     <string name="quran">Quran</string>
-     <string name="adkar">Adkar</string>
-      <string name="prayer_time">Prayer Time</string>
-      <string name="my_quran">My Quran</string>
+    <string name="adkar">Adkar</string>
+    <string name="prayer_time">Prayer Time</string>
+    <string name="zakt_calculator">Zakkath Calculator</string>
+    <string name="about_app">About App</string>
+    <string name="my_quran">My Quran</string>
+    <string name="cash_in_bank">Cash in Bank in Savings Account</string>
+    <string name="cash_in_hand">Cash in Hand</string>
+    <string name="price_GM">Price/GM</string>
+    <string name="calculate">Calculate</string>
+    <string name="sura_names">Sura Names</string>
+    <string name="fajr">Fajr</string>
+    <string name="subahi">Subahi</string>
+    <string name="lohar">Lohar</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="togglebutton">ToggleButton</string>
+
 </resources>

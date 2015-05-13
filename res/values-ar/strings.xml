@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="quran">القرآن الكريم</string>
+    <string name="adkar">أدكار الذي</string>
+    <string name="prayer_time">وقت الصلاة</string>
+    <string name="zakt_calculator">آلة حاسبة الزكاة</string>
+    <string name="about_app">عن التطبيق</string>
+    <string name="cash_in_hand">النقد في الصندوق</string>
+    <string name="cash_in_bank">النقدية في البنك في حساب التوفير</string>
+    <string name="price_GM">السعر في غرام</string>
+	<string name="calculate">حساب</string>
+	<string name="sura_names">سورة أسماء</string>
+	<string name="fajr">الفجر</string>
+	<string name="subahi">صباحي</string>
+	<string name="lohar">وهار</string>
+	<string name="asr">العصر</string>
+	<string name="maghrib">المغرب</string>
+	<string name="isha">العشاء</string>
+    
+</resources>

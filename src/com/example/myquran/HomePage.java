@@ -1,7 +1,9 @@
 package com.example.myquran;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,17 +17,12 @@ public class HomePage extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
-	public void islamButton(View v)
-	{
-		Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
-	}
-	public void eimanButton(View v)
-	{
-		Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
-	}
+
 	public void quranButton(View v)
 	{
-		Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(this, QuranActivity.class));
+		//this.finish();
+		return;
 	}
 	public void adkarButton(View v)
 	{
@@ -33,16 +30,16 @@ public class HomePage extends ActionBarActivity {
 	}
 	public void prayerTimebutton(View v)
 	{
-		Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
 		startActivity(new Intent(this, PrayerTimeActivity.class));
-		finish();
+		//finish();
 		return;
+
+
 	}
 	public void zakkathButton(View v)
 	{
-		//Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
 		startActivity(new Intent(this, ZakkathActivity.class));
-		finish();
+		//finish();
 		return;
 	}
 	public void aboutbutton(View v)
@@ -59,13 +56,36 @@ public class HomePage extends ActionBarActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+
+
+		switch (item.getItemId()) {
+		case R.id.action_settings:
+
+			startActivity(new Intent(this,PrefsActivity.class));
+			//return true;
+			break;
+		case R.id.action_settings1:
+			break;
+
+		default:
+			break;
 		}
+		//return false;
+
 		return super.onOptionsItemSelected(item);
+
 	}
+	private void displaySharedPreferences() {  
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(HomePage.this);  
+
+		String listPrefs = prefs.getString("listpref", "Default list prefs");  
+
+		StringBuilder builder = new StringBuilder();  
+
+		builder.append("List preference: " + listPrefs);  
+		//textView.setText(builder.toString());  
+
+	}  
+
 }
+
