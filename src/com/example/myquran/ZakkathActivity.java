@@ -67,16 +67,22 @@ public class ZakkathActivity extends ActionBarActivity {
 		int id = item.getItemId();
 		switch (item.getItemId()) {
 		case R.id.action_settings:
-			Intent intent = new Intent(ZakkathActivity.this,PrefsActivity.class);  
+			Intent intent = new Intent(ZakkathActivity.this,LanguageSelect.class);  
 			startActivity(intent);  
 			//startActivity(new Intent(getApplicationContext(),LanguageSelect.class));
 			break;
-		case R.id.action_settings1:
-			break;
+//		case R.id.action_settings1:
+//			break;
 
 		default:
 			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	@Override
+	public void onBackPressed() {
+		startActivity(new Intent(this, HomePage.class));
+		finish();		
+	}
+
 }

@@ -17,5 +17,11 @@
 	<string name="asr">العصر</string>
 	<string name="maghrib">المغرب</string>
 	<string name="isha">العشاء</string>
+	<string name="morning_dua">صباح الدعاء</string>
+    <string name="eve_dua">مساء الدعاء</string>
+    <string name="dua_sleep">دعاء قبل النوم</string>
+    <string name="wakingup_dua">دعاء الاستيقاظ من النوم</string>
+    <string name="enter_mosque">دعاء دخول المسجد</string>
+    <string name="after_prayer">الدعاء بعد الصلاة</string>
     
 </resources>

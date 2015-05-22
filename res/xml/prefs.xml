@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    
     <PreferenceCategory
         android:summary="Change the Language information"
         android:title="Language Settings" >
-        
         <ListPreference
             android:entries="@array/listOptions"
             android:entryValues="@array/listValues"

@@ -8,11 +8,7 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_settings1"
-        android:icon="@drawable/refresss"
-       
-        android:title="@+id/action_settings1"
-        app:showAsAction="always"/>
+    
 
 </menu>
+

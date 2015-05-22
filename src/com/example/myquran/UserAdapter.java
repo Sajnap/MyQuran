@@ -14,7 +14,7 @@ public class UserAdapter extends ArrayAdapter<String>{
 	
 	Context myContext;
 
-	public UserAdapter(Context context, UserModel[] userModels) {
+	public UserAdapter(Context context, QuranUserModel[] userModels) {
 		super(context, R.layout.quran_name_list);
 		
 		this.myContext=context;

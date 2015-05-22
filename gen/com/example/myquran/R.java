@@ -1648,7 +1648,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f0a003f;
-        public static final int RelativeLayout1=0x7f0a0045;
+        public static final int RelativeLayout1=0x7f0a004d;
         public static final int action_bar=0x7f0a0031;
         public static final int action_bar_activity_content=0x7f0a0003;
         public static final int action_bar_container=0x7f0a0030;
@@ -1663,7 +1663,6 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
         public static final int action_settings=0x7f0a005f;
-        public static final int action_settings1=0x7f0a0060;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0014;
         public static final int beginning=0x7f0a001b;
@@ -1692,11 +1691,11 @@ containing a value of this type.
         public static final int icon=0x7f0a0026;
         public static final int ifRoom=0x7f0a0016;
         public static final int image=0x7f0a0023;
-        public static final int lay1=0x7f0a005a;
+        public static final int lay1=0x7f0a004c;
         public static final int listMode=0x7f0a000a;
         public static final int list_item=0x7f0a0025;
         public static final int middle=0x7f0a001d;
-        public static final int my_main_listview=0x7f0a0059;
+        public static final int my_main_listview=0x7f0a004b;
         public static final int never=0x7f0a0017;
         public static final int none=0x7f0a000f;
         public static final int normal=0x7f0a000b;
@@ -1719,29 +1718,29 @@ containing a value of this type.
         public static final int showTitle=0x7f0a0012;
         public static final int split_action_bar=0x7f0a0004;
         public static final int submit_area=0x7f0a003c;
-        public static final int switch1=0x7f0a0046;
+        public static final int switch1=0x7f0a004f;
         public static final int tabMode=0x7f0a000c;
-        public static final int textView1=0x7f0a0047;
-        public static final int textView10=0x7f0a0051;
-        public static final int textView11=0x7f0a0054;
-        public static final int textView12=0x7f0a0057;
-        public static final int textView2=0x7f0a0048;
-        public static final int textView3=0x7f0a004a;
-        public static final int textView4=0x7f0a004d;
-        public static final int textView5=0x7f0a0050;
-        public static final int textView6=0x7f0a0053;
-        public static final int textView7=0x7f0a0056;
-        public static final int textView8=0x7f0a004b;
-        public static final int textView9=0x7f0a004e;
+        public static final int textView1=0x7f0a004e;
+        public static final int textView10=0x7f0a0055;
+        public static final int textView11=0x7f0a0057;
+        public static final int textView12=0x7f0a0059;
+        public static final int textView2=0x7f0a0045;
+        public static final int textView3=0x7f0a0046;
+        public static final int textView4=0x7f0a0047;
+        public static final int textView5=0x7f0a0048;
+        public static final int textView6=0x7f0a0049;
+        public static final int textView7=0x7f0a004a;
+        public static final int textView8=0x7f0a0051;
+        public static final int textView9=0x7f0a0053;
         public static final int title=0x7f0a0027;
         public static final int up=0x7f0a0001;
         public static final int useLogo=0x7f0a0013;
-        public static final int view1=0x7f0a0049;
-        public static final int view2=0x7f0a004c;
-        public static final int view3=0x7f0a004f;
-        public static final int view4=0x7f0a0052;
-        public static final int view5=0x7f0a0055;
-        public static final int view6=0x7f0a0058;
+        public static final int view1=0x7f0a0050;
+        public static final int view2=0x7f0a0052;
+        public static final int view3=0x7f0a0054;
+        public static final int view4=0x7f0a0056;
+        public static final int view5=0x7f0a0058;
+        public static final int view6=0x7f0a005a;
         public static final int withText=0x7f0a0018;
         public static final int wrap_content=0x7f0a0009;
     }
@@ -1795,12 +1794,15 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int lang_select=0x7f030018;
-        public static final int prayer_time=0x7f030019;
-        public static final int quran=0x7f03001a;
-        public static final int quran_name_list=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static final int zakkat_calculator=0x7f03001d;
+        public static final int adkar_home=0x7f030018;
+        public static final int adkar_home1=0x7f030019;
+        public static final int lang_select=0x7f03001a;
+        public static final int list_adkar=0x7f03001b;
+        public static final int prayer_time=0x7f03001c;
+        public static final int quran=0x7f03001d;
+        public static final int quran_name_list=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int zakkat_calculator=0x7f030020;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -1869,16 +1871,21 @@ containing a value of this type.
         public static final int about_app=0x7f0b0017;
         public static final int action_settings=0x7f0b0012;
         public static final int adkar=0x7f0b0014;
+        public static final int after_prayer=0x7f0b002a;
         public static final int app_name=0x7f0b0010;
         public static final int asr=0x7f0b0021;
         public static final int calculate=0x7f0b001c;
         public static final int cash_in_bank=0x7f0b0019;
         public static final int cash_in_hand=0x7f0b001a;
+        public static final int dua_sleep=0x7f0b0027;
+        public static final int enter_mosque=0x7f0b0029;
+        public static final int eve_dua=0x7f0b0026;
         public static final int fajr=0x7f0b001e;
         public static final int hello_world=0x7f0b0011;
         public static final int isha=0x7f0b0023;
         public static final int lohar=0x7f0b0020;
         public static final int maghrib=0x7f0b0022;
+        public static final int morning_dua=0x7f0b0025;
         public static final int my_quran=0x7f0b0018;
         public static final int prayer_time=0x7f0b0015;
         public static final int price_GM=0x7f0b001b;
@@ -1886,6 +1893,7 @@ containing a value of this type.
         public static final int subahi=0x7f0b001f;
         public static final int sura_names=0x7f0b001d;
         public static final int togglebutton=0x7f0b0024;
+        public static final int wakingup_dua=0x7f0b0028;
         public static final int zakt_calculator=0x7f0b0016;
     }
     public static final class style {

@@ -2,22 +2,48 @@ package com.example.myquran;
 
 import java.util.Locale;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class LanguageSelect extends ActionBarActivity {
 
+	boolean toggleState;
+	//TextView text;
+	TextView text1;
+	String lang;
+	String lang1;
+	SharedPreferences sharedPreferences;
+	ToggleButton toggleButton;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lang_select);
-	}
+		//text = (TextView) findViewById(R.id.textView3);
+		text1 = (TextView) findViewById(R.id.textView1);
+		ToggleButton tg = (ToggleButton) findViewById(R.id.switch1);
+		sharedPreferences = getApplicationContext().getSharedPreferences("toggleState",Context.MODE_PRIVATE);
+		toggleState=sharedPreferences.getBoolean("ToggleState",false);
+		lang="Arabic";
+		lang1="English";
+		if(toggleState){
+			setLocale("ar"); 
+			//text.setText("ON");
+			tg.setChecked(true);
+		}
+		else {
+			setLocale("en-us");
+			//text.setText("OFF");
+			tg.setChecked(false);
+		}
 
+	}
 
 	private void setLocale (String localeCode){
 		Locale locale = new Locale(localeCode);
@@ -31,20 +57,52 @@ public class LanguageSelect extends ActionBarActivity {
 
 	public void onToggleClicked(View view) {
 
-		boolean on = ((ToggleButton) view).isChecked();
-		//boolean off= ((ToggleButton) view).isChecked();
+		toggleState = ((ToggleButton) view).isChecked();
+		SharedPreferences.Editor editor = getSharedPreferences("toggleState", MODE_PRIVATE).edit();
 
-		if (on) {
+		if (toggleState) {
 			setLocale("ar"); 
+			//text.setText("ON");
+			text1.setText("Selected Language is "+lang+" !");
 
 		} else {
 			setLocale("en-us");
-			Toast.makeText(getApplicationContext(), "Off button mode", Toast.LENGTH_SHORT).show();
-
+			//text.setText("OFF");
+			text1.setText("Selected Language is "+lang1+" !");
 		}
-		startActivity(new Intent(this, HomePage.class));
-		finish();
+		editor.putBoolean("ToggleState", toggleState);
+		editor.commit();
 
 	}
+
+	@Override
+	public void onBackPressed() {
+		startActivity(new Intent(this, HomePage.class));
+		finish();		
+	}
+
+
+	//	public void onResume() {
+	//		super.onResume();
+	//
+	//		toggleState = sharedPreferences.getBoolean("toggleState", false);
+	//		//Log.v("toggleState", Boolean.toString(toggleState));
+	//
+	//		if (toggleState) {
+	//			toggleButton.setChecked(true);
+	//			text.setText("ON");
+	//		} else {
+	//			toggleButton.setChecked(false);
+	//			text.setText("OFF");
+	//		}
+	//
+	//		toggleButton.setChecked(toggleState);
+	//		toggleButton.setOnCheckedChangeListener((OnCheckedChangeListener) this);         
+	//	}
+	//	@Override
+	//	protected void onPause() {
+	//		super.onPause();             
+	//		toggleButton.setOnCheckedChangeListener(null);
+	//	} 
 
 }
