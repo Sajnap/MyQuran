@@ -13,6 +13,7 @@ public class HomePage extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//getActionBar().setHomeButtonEnabled(true);
 		setContentView(R.layout.activity_main);
 	}
 	@Override
@@ -24,8 +25,9 @@ public class HomePage extends ActionBarActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-
+		
 		switch (item.getItemId()) {
+		
 		case R.id.action_settings:
 			Intent i = new Intent(this, LanguageSelect.class);
 			startActivity(i);
@@ -63,7 +65,9 @@ public class HomePage extends ActionBarActivity {
 	}
 	public void aboutbutton(View v)
 	{
-		Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(this, AboutAppActivity.class));
+		//finish();
+		return;
 	}
 }
 

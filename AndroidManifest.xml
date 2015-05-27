@@ -64,6 +64,9 @@
             
              <activity  android:name="com.example.myquran.AdkarListViewAfterPrayer"
             android:label="@string/app_name" ></activity>
+             
+              <activity  android:name="com.example.myquran.AboutAppActivity"
+            android:label="@string/app_name" ></activity>
     </application>
 
 </manifest>

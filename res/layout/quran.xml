@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bodyy"
     android:orientation="vertical"
+    android:weightSum="3.0"
     tools:context="com.example.myquran.HomePage" >
 
     <TextView
@@ -14,13 +15,24 @@
         android:text="@string/sura_names"
         android:textColor="#5F8EBF"
         android:textSize="25sp"
+        android:layout_weight="1.0"
         android:gravity="center"
         android:textStyle="bold" />
+
     <ListView
         android:id="@+id/my_main_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_below="@+id/lay1">
+        android:layout_height="428dp"
+        android:layout_weight="1.0"
+        android:layout_below="@+id/lay1" >
+
     </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:text="TextView" />
 
 </LinearLayout>
