@@ -1,1 +1,1 @@
-INSERT INTO "android_metadata" VALUES ('en_US')
+select * from suranames;
