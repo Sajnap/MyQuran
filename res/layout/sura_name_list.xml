@@ -1,18 +1,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
+    android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bodyy"
-    android:orientation="vertical"
+    
+    android:orientation="horizontal"
+    android:weightSum="2.0"
     tools:context="com.example.myquran.HomePage" >
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/SId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#E0DA7C"
         android:textSize="25sp"
+        android:layout_weight="1.0"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E0DA7C"
+        android:textSize="25sp"
+        android:layout_weight="1.0"
         android:textStyle="bold" />
 
 </LinearLayout>

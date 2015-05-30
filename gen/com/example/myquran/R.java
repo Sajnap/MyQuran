@@ -19,6 +19,8 @@ public final class R {
     public static final class array {
         public static final int listOptions=0x7f0d0000;
         public static final int listValues=0x7f0d0001;
+        public static final int quranList=0x7f0d0003;
+        public static final int suranamesList=0x7f0d0002;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1649,7 +1651,10 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f0a0041;
+        public static final int LinearLayout2=0x7f0a005c;
         public static final int RelativeLayout1=0x7f0a004f;
+        public static final int SId=0x7f0a005d;
+        public static final int Sname=0x7f0a005e;
         public static final int Text1=0x7f0a0040;
         public static final int action_bar=0x7f0a0031;
         public static final int action_bar_activity_content=0x7f0a0003;
@@ -1664,12 +1669,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_settings=0x7f0a0060;
+        public static final int action_settings=0x7f0a0063;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0014;
         public static final int beginning=0x7f0a001b;
         public static final int button1=0x7f0a0043;
-        public static final int button123=0x7f0a005f;
+        public static final int button123=0x7f0a0062;
         public static final int button2=0x7f0a0044;
         public static final int button6=0x7f0a0042;
         public static final int button7=0x7f0a0046;
@@ -1681,9 +1686,9 @@ containing a value of this type.
         public static final int dialog=0x7f0a0019;
         public static final int disableHome=0x7f0a000d;
         public static final int dropdown=0x7f0a001a;
-        public static final int editText1=0x7f0a005c;
-        public static final int editText2=0x7f0a005d;
-        public static final int editText3=0x7f0a005e;
+        public static final int editText1=0x7f0a005f;
+        public static final int editText2=0x7f0a0060;
+        public static final int editText3=0x7f0a0061;
         public static final int edit_query=0x7f0a0033;
         public static final int end=0x7f0a001c;
         public static final int expand_activities_button=0x7f0a0022;
@@ -1805,7 +1810,8 @@ containing a value of this type.
         public static final int quran=0x7f03001e;
         public static final int quran_name_list=0x7f03001f;
         public static final int support_simple_spinner_dropdown_item=0x7f030020;
-        public static final int zakkat_calculator=0x7f030021;
+        public static final int sura_name_list=0x7f030021;
+        public static final int zakkat_calculator=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;

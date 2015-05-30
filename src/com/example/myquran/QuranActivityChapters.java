@@ -10,53 +10,46 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class QuranActivity extends ActionBarActivity {
-	DataBaseHelper dbh;
-	UserModel contacts ;
-	String[] name,id ;
-	ListView myListView;
-	String ss,nameq;
-	ArraySuraname adapter ;
-	ArrayList<String> Qname = new ArrayList<String>();
-	ArrayList<String> QID = new ArrayList<String>();
-
+public class QuranActivityChapters extends ActionBarActivity {
+	
+ListView lvList;
+String [] ChaperName,idName;
+String Cname,CID,IntentValue;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.quran);
-		myListView=(ListView) findViewById(R.id.my_main_listview);
-		name    = getResources().getStringArray(R.array.suranamesList);
+		lvList=(ListView) findViewById(R.id.my_main_listview);
+		ChaperName    = getResources().getStringArray(R.array.quranList);
+		ArrayList<String> Qname = new ArrayList<String>();
+		ArrayList<String> QID = new ArrayList<String>();
 		
-		for (int i = 0; i < name.length; i++) {
-			
-			id = name[i].split(",");
-			ss = id[1];
-			nameq=id[2];
-			Qname.add(nameq);
-			QID.add(ss);
-			System.out.println(Qname);
-			System.out.println(QID);
-			
-		}
+			IntentValue  = getIntent().getExtras().getString("ID");
 		
-		 adapter = new ArraySuraname(QuranActivity.this, android.R.layout.simple_list_item_1,Qname,QID);
-		myListView.setAdapter(adapter);
-		myListView.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				// TODO Auto-generated method stub
-				String ss = QID.get(position);
-				System.out.println(ss+"PPPPPPPPPPPPPPPPP");
-				Intent i = new Intent(QuranActivity.this,QuranActivityChapters.class);
-				i.putExtra("ID", ss);
-				startActivity(i);
-				
-			}
-		});
+			
+				for (int i = 0; i < ChaperName.length; i++) {
+					
+					idName = ChaperName[i].split(",");
+					CID = idName[1];
+					
+					
+					if (CID.contains(IntentValue))
+					{
+						Cname=idName[4];
+						System.out.println(Cname+"VVVVVVVVVVv");
+						Qname.add(Cname);
+						
+					}
+					
+					
+					}
+			ArrayAdapter<String>	adapter = new ArrayAdapter(QuranActivityChapters.this, android.R.layout.simple_list_item_1,Qname);
+			lvList.setAdapter(adapter);
+		
+		
 		//new MyDBLoaderAsync().execute();
 	}
 /*
