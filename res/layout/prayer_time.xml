@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context="com.example.myquran.HomePage" >
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:textColor="#663737"
+        android:textSize="25sp"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:text="@string/prayer_time" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/fajr"
-            android:textColor="#5F8EBF"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -30,9 +41,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="4:45 AM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -54,8 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="@string/subahi"
-            android:textColor="#5F8EBF"
+            android:text="@string/sunrise"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -65,9 +85,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="6:06 AM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode_off" />
     </LinearLayout>
 
     <View
@@ -89,8 +118,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="@string/lohar"
-            android:textColor="#5F8EBF"
+            android:text="@string/zohr"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -100,9 +129,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="12:35 PM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -125,7 +163,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/asr"
-            android:textColor="#5F8EBF"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -135,9 +173,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="3:48 PM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -160,7 +207,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/maghrib"
-            android:textColor="#5F8EBF"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -170,9 +217,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="7:04 PM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -195,7 +251,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/isha"
-            android:textColor="#5F8EBF"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -205,9 +261,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="8:34 PM"
+            android:text=" "
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -215,5 +280,12 @@
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:background="#305F4A4A" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getTime"
+        android:text="Button" />
 
 </LinearLayout>

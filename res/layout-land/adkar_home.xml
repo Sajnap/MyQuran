@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bodyy"
+    android:orientation="vertical"
+    tools:context="com.example.myquran.HomePage" >
+
+    <Button
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="MorningDua"
+        android:text="@string/morning_dua"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="EveningDua"
+        android:text="@string/eve_dua"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+         />
+
+    <Button
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="SleepDua"
+        android:text="@string/dua_sleep"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+         />
+
+    <Button
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="WakingUpDua"
+        android:text="@string/wakingup_dua"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="EnterMosqueDua"
+        android:text="@string/enter_mosque"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#407B7950"
+        android:onClick="AfterPrayer"
+        android:text="@string/after_prayer"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp"
+         />
+
+</LinearLayout>

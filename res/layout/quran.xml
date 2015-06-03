@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/sura_names"
-        android:textColor="#5F8EBF"
-        android:textSize="32sp"
+        android:textColor="#663737"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <ListView

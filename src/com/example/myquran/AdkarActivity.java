@@ -70,9 +70,7 @@ public class AdkarActivity extends ActionBarActivity {
 		case R.id.action_settings:
 			startActivity(new Intent(getApplicationContext(),LanguageSelect.class));
 			break;
-//		case R.id.action_settings1:
-//			break;
-			
+
 		default:
 			break;
 		}

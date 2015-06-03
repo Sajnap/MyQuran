@@ -12,8 +12,8 @@
 	<string name="calculate">حساب</string>
 	<string name="sura_names">سورة أسماء</string>
 	<string name="fajr">الفجر</string>
-	<string name="subahi">صباحي</string>
-	<string name="lohar">وهار</string>
+	<string name="sunrise">صباحي</string>
+	<string name="zohr">وهار</string>
 	<string name="asr">العصر</string>
 	<string name="maghrib">المغرب</string>
 	<string name="isha">العشاء</string>
@@ -23,5 +23,5 @@
     <string name="wakingup_dua">دعاء الاستيقاظ من النوم</string>
     <string name="enter_mosque">دعاء دخول المسجد</string>
     <string name="after_prayer">الدعاء بعد الصلاة</string>
-    
+  	<string name="about_app_details">هذا التطبيق يحتوي على كافة فصول القرآن ، أدكار الذي ، وقت الصلاة ، و آلة حاسبة الزكاة . أدكار الذي المسلمين مساعدة قراءة صلواتهم اليومية. و يقدم أوقات الصلاة الإسلامية . أيضا حساب الزكاة يختلف بالنسبة للموجودات والمطلوبات المختلفة </string>
 </resources>

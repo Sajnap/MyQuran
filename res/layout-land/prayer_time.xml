@@ -7,11 +7,22 @@
     android:orientation="vertical"
     tools:context="com.example.myquran.HomePage" >
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:textColor="#663737"
+        android:textSize="25sp"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:text="@string/prayer_time" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -19,8 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Fajr"
-            android:textColor="#5F8EBF"
+            android:text="@string/fajr"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -30,23 +41,32 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="4:45 AM"
+            android:text="04:47 AM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
         android:id="@+id/view1"
         android:layout_width="match_parent"
-        android:background="#305F4A4A"
-        android:layout_height="2dp" />
+        android:layout_height="2dp"
+        android:background="#305F4A4A" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -54,8 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Subahi"
-            android:textColor="#5F8EBF"
+            android:text="@string/sunrise"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -65,23 +85,32 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="6:06 AM"
+            android:text="06:02 AM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode_off" />
     </LinearLayout>
 
     <View
         android:id="@+id/view2"
         android:layout_width="wrap_content"
-        android:background="#305F4A4A"
-        android:layout_height="2dp" />
-   
+        android:layout_height="2dp"
+        android:background="#305F4A4A" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -89,8 +118,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Duhr"
-            android:textColor="#5F8EBF"
+            android:text="@string/zohr"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -100,23 +129,32 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="12:35 PM"
+            android:text="12:21 PM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
         android:id="@+id/view3"
         android:layout_width="wrap_content"
-        android:layout_height="2dp" 
-        android:background="#305F4A4A"/>
+        android:layout_height="2dp"
+        android:background="#305F4A4A" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -124,8 +162,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Asr"
-            android:textColor="#5F8EBF"
+            android:text="@string/asr"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -135,9 +173,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="3:48 PM"
+            android:text="03:47 PM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -149,9 +196,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -159,8 +206,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Maghrib"
-            android:textColor="#5F8EBF"
+            android:text="@string/maghrib"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -170,9 +217,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="7:04 PM"
+            android:text="06:39 PM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -184,9 +240,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:weightSum="2.0" >
 
         <TextView
@@ -194,8 +250,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:text="Isha"
-            android:textColor="#5F8EBF"
+            android:text="@string/isha"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -205,9 +261,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="8:34 PM"
+            android:text="07:56 PM"
+            android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View

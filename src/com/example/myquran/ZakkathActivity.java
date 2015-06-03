@@ -44,7 +44,7 @@ public class ZakkathActivity extends ActionBarActivity {
 			x= (float) ((b1 * 2.5)/ 100);
 			y= (float) ((g1 * 2.5)/ 100);
 			w=a+x+y;
-			tv.setText("Total amount is:\n"+w+" !");
+			tv.setText("Rs: "+w+" !");
 
 			//Toast.makeText(getApplicationContext(), "The total amount is = " + w + " !", Toast.LENGTH_SHORT).show();
 

@@ -39,37 +39,48 @@
         <activity
             android:name="com.example.myquran.LanguageSelect"
             android:label="@string/app_name" >
-            
         </activity>
-        <activity  android:name="com.example.myquran.PrefsActivity"
-            android:label="@string/app_name" ></activity>
-        
-        <activity  android:name="com.example.myquran.AdkarActivity"
-            android:label="@string/app_name" ></activity>
-        
-        <activity  android:name="com.example.myquran.AdkarListViewMorning"
-            android:label="@string/app_name" ></activity>
-        
-         <activity  android:name="com.example.myquran.AdkarListViewEvening"
-            android:label="@string/app_name" ></activity>
-         
-          <activity  android:name="com.example.myquran.AdkarListViewSleep"
-            android:label="@string/app_name" ></activity>
-          
-           <activity  android:name="com.example.myquran.AdkarListViewWakingUp"
-            android:label="@string/app_name" ></activity>
-           
-            <activity  android:name="com.example.myquran.AdkarListViewMosque"
-            android:label="@string/app_name" ></activity>
-            
-             <activity  android:name="com.example.myquran.AdkarListViewAfterPrayer"
-            android:label="@string/app_name" ></activity>
-             
-              <activity  android:name="com.example.myquran.QuranActivityChapters"
-            android:label="@string/app_name" ></activity>
-             
-              <activity  android:name="com.example.myquran.AboutAppActivity"
-            android:label="@string/app_name" ></activity>
+        <activity
+            android:name="com.example.myquran.PrefsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewMorning"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewEvening"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewSleep"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewWakingUp"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewMosque"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AdkarListViewAfterPrayer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.QuranActivityChapters"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.AboutAppActivity"
+            android:label="@string/app_name" >
+        </activity>
+       
     </application>
 
 </manifest>

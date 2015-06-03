@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class AdkarListViewAfterPrayer extends ActionBarActivity {
 
@@ -37,7 +38,7 @@ public class AdkarListViewAfterPrayer extends ActionBarActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.newww, menu);
 		return true;
 	}
 
@@ -48,7 +49,9 @@ public class AdkarListViewAfterPrayer extends ActionBarActivity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
-			return true;
+			finish();
+			startActivity(getIntent());
+			Toast.makeText(getApplicationContext(), "Refreshed..", Toast.LENGTH_SHORT).show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

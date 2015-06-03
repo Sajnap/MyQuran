@@ -7,52 +7,54 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class QuranActivityChapters extends ActionBarActivity {
-	
-ListView lvList;
-String [] ChaperName,idName;
-String Cname,CID,IntentValue;
+
+	ListView lvList;
+	String [] ChapterName,idName;
+	String Cname,CID,IntentValue;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.quran);
+		setContentView(R.layout.quran_chapter);
 		lvList=(ListView) findViewById(R.id.my_main_listview);
-		ChaperName    = getResources().getStringArray(R.array.quranList);
+		ChapterName    = getResources().getStringArray(R.array.quranList);
 		ArrayList<String> Qname = new ArrayList<String>();
 		ArrayList<String> QID = new ArrayList<String>();
-		
-			IntentValue  = getIntent().getExtras().getString("ID");
-		
-			
-				for (int i = 0; i < ChaperName.length; i++) {
-					
-					idName = ChaperName[i].split(",");
-					CID = idName[1];
-					
-					
-					if (CID.contains(IntentValue))
-					{
-						Cname=idName[4];
-						System.out.println(Cname+"VVVVVVVVVVv");
-						Qname.add(Cname);
-						
-					}
-					
-					
-					}
-			ArrayAdapter<String>	adapter = new ArrayAdapter(QuranActivityChapters.this, android.R.layout.simple_list_item_1,Qname);
-			lvList.setAdapter(adapter);
-		
-		
+
+		IntentValue  = getIntent().getExtras().getString("ID");
+		IntentValue=IntentValue.replace(" ", "");
+		int chapterNo=Integer.parseInt(IntentValue);
+		int tempChapterNo=0;
+
+
+		for (int i = 0; i < ChapterName.length; i++) {
+
+			idName = ChapterName[i].split(",");
+			CID = idName[1];
+			CID =CID.replace(" ", "");
+
+			tempChapterNo=Integer.parseInt(CID);
+			System.out.println(CID+" vs "+IntentValue);
+			if (chapterNo == tempChapterNo )
+			{
+				Cname=idName[4];
+				System.out.println(Cname+"VVVVVVVVVVv");
+				Qname.add(Cname);
+			}else if(chapterNo < tempChapterNo ){
+				break;
+			}
+		}
+		ArrayAdapter<String>	adapter = new ArrayAdapter(QuranActivityChapters.this, android.R.layout.simple_list_item_1,Qname);
+		lvList.setAdapter(adapter);
+
+
 		//new MyDBLoaderAsync().execute();
 	}
-/*
+	/*
 	private class MyDBLoaderAsync extends AsyncTask<Void, Void, String>{
 		ListView myListView;
 		ArrayList<String> data;
@@ -121,7 +123,7 @@ String Cname,CID,IntentValue;
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.newww, menu);
 		return true;
 	}
 
@@ -131,11 +133,10 @@ String Cname,CID,IntentValue;
 		int id = item.getItemId();
 		switch (item.getItemId()) {
 		case R.id.action_settings:
-			startActivity(new Intent(getApplicationContext(),LanguageSelect.class));
-			break;
-			//		case R.id.action_settings1:
-			//			break;
 
+			finish();
+			startActivity(getIntent());
+			Toast.makeText(getApplicationContext(), "Refreshed..", Toast.LENGTH_SHORT).show();
 		default:
 			break;
 		}
