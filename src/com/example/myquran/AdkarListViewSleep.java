@@ -12,6 +12,9 @@ public class AdkarListViewSleep extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
 		setContentView(R.layout.adkar_home1);
 		ListView myListView=(ListView) findViewById(R.id.my_main_listview);
 
@@ -53,7 +56,7 @@ public class AdkarListViewSleep extends ActionBarActivity {
 		if (id == R.id.action_settings) {
 			finish();
 			startActivity(getIntent());
-			Toast.makeText(getApplicationContext(), "Refreshed..", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "Refreshing..", Toast.LENGTH_SHORT).show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

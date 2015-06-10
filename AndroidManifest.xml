@@ -6,18 +6,20 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/qq"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.myquran.HomePage"
-            android:label="@string/app_name" >
+            android:name="com.example.myquran.FrontPage"
+            android:label="@string/app_name"
+             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,16 +27,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myquran.PrayerTimeActivity"
+            android:name="com.example.myquran.HomePage"
+            android:icon="@drawable/quranz"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.Islamactivity"
+            android:icon="@drawable/quranz"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.example.myquran.PrayerTimeActivity"
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.ZakkathActivity"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.QuranActivity"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.LanguageSelect"
@@ -46,41 +61,51 @@
         </activity>
         <activity
             android:name="com.example.myquran.AdkarActivity"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewMorning"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewEvening"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewSleep"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewWakingUp"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewMosque"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AdkarListViewAfterPrayer"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.QuranActivityChapters"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.myquran.AboutAppActivity"
-            android:label="@string/app_name" >
+            android:icon="@drawable/quranz"
+            android:label="" >
         </activity>
-       
+
+        <receiver android:name="com.example.myquran.AlarmReceiver" />
     </application>
 
 </manifest>

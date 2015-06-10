@@ -7,17 +7,6 @@
     android:orientation="vertical"
     tools:context="com.example.myquran.HomePage" >
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-         android:textColor="#663737"
-        android:textSize="25sp"
-        android:layout_marginBottom="12dp"
-        android:textStyle="bold"
-        android:text="@string/prayer_time" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,18 +30,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="04:46 AM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -85,18 +66,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="05:54 AM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/ImageView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode_off" />
     </LinearLayout>
 
     <View
@@ -129,18 +102,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="12:17 PM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/ImageView02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -173,18 +138,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="03:44 PM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/ImageView03"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -217,18 +174,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="06:39 PM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/ImageView04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -261,18 +210,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text=" "
+            android:text="07:57 PM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/ImageView05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1.0"
-            android:src="@drawable/ic_lock_silent_mode" />
     </LinearLayout>
 
     <View
@@ -280,12 +221,5 @@
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:background="#305F4A4A" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getTime"
-        android:text="Button" />
 
 </LinearLayout>

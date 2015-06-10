@@ -44,7 +44,7 @@
         android:layout_above="@+id/textView4"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
-        android:src="@drawable/quran" />
+        android:src="@drawable/qq" />
 
     <TextView
         android:id="@+id/textView2"

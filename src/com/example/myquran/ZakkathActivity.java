@@ -17,6 +17,9 @@ public class ZakkathActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
 		setContentView(R.layout.zakkat_calculator);
 	}
 
@@ -38,8 +41,6 @@ public class ZakkathActivity extends ActionBarActivity {
 			float g1=Float.parseFloat(gold);
 
 			TextView tv=(TextView)findViewById(R.id.textView2);
-
-
 			a= (float) ((h1 * 2.5)/ 100);
 			x= (float) ((b1 * 2.5)/ 100);
 			y= (float) ((g1 * 2.5)/ 100);
@@ -69,11 +70,7 @@ public class ZakkathActivity extends ActionBarActivity {
 		case R.id.action_settings:
 			Intent intent = new Intent(ZakkathActivity.this,LanguageSelect.class);  
 			startActivity(intent);  
-			//startActivity(new Intent(getApplicationContext(),LanguageSelect.class));
 			break;
-//		case R.id.action_settings1:
-//			break;
-
 		default:
 			break;
 		}

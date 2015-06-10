@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:text="@string/about_app"
+        android:text="@string/app_name"
         android:textColor="#663737"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -20,13 +20,20 @@
     <TextView
         android:id="@+id/Text1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:textColor="#E0DA7C"
-        android:minLines="10"
-        android:singleLine="false"
-        android:text="@string/about_app_details"/>
+        android:text="This application contains all the chapters of the Quran, Adkar, Prayer time and Zakkat Calculator. Adkar help muslims read their daily prayers. And provides islamic prayer times. Also calculation of Zakat varies for different assets and liabilities."
+        android:textColor="#E0DA7C" />
+
+    <TextView
+        android:id="@+id/Text21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Text1"
+        android:layout_below="@+id/Text1"
+        android:layout_marginTop="45dp"
+        android:text="The App updated on June 15, 2015 and developed by Sajna Parish. Email:sajnap81@gmail.com"
+        android:textColor="#E0DA7C" />
 
 </RelativeLayout>

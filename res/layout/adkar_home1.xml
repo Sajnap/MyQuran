@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/bodyy"
     android:orientation="vertical"
+    android:weightSum="6.0"
     tools:context="com.example.myquran.HomePage" >
      <ListView
         android:id="@+id/my_main_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
+        android:layout_weight="5.0"
         android:layout_below="@+id/lay1">
     </ListView>
     

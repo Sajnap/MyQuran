@@ -2,18 +2,22 @@ package com.example.myquran;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class HomePage extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//getActionBar().setHomeButtonEnabled(true);
+
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		
 		setContentView(R.layout.activity_main);
 	}
 	@Override
@@ -49,6 +53,13 @@ public class HomePage extends ActionBarActivity {
 	{
 		startActivity(new Intent(this, AdkarActivity.class));
 		return;
+	}
+	public void aboutIslam(View v)
+	{
+		startActivity(new Intent(this, Islamactivity.class));
+		//finish();
+		return;
+
 	}
 	public void prayerTimebutton(View v)
 	{

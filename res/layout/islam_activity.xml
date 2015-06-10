@@ -8,20 +8,13 @@
     android:weightSum="6.0"
     tools:context="com.example.myquran.HomePage" >
 
+   
     <ListView
         android:id="@+id/my_main_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content" 
         android:layout_weight="5.0"
-         >
+        android:layout_below="@+id/lay1">
     </ListView>
-    <ZoomControls
-        android:id="@+id/zoomControls1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1.0"
-        />
 
 </LinearLayout>

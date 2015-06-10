@@ -12,6 +12,9 @@ public class AdkarActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
 		setContentView(R.layout.adkar_home);
 	}
 	public void MorningDua(View v)

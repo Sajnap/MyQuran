@@ -9,25 +9,32 @@ import android.widget.Toast;
 
 public class AdkarListViewAfterPrayer extends ActionBarActivity {
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
 		setContentView(R.layout.adkar_home1);
-		ListView myListView=(ListView) findViewById(R.id.my_main_listview);
+
+		final ListView myListView=(ListView) findViewById(R.id.my_main_listview);
 
 		UserAdapterAdkar myUserAdapter=new UserAdapterAdkar(getApplicationContext(), createDummyUserModels());
 
 		myListView.setAdapter(myUserAdapter);
+
+
 	}
 	public UserModel[] createDummyUserModels(){
 
 		String[] names={"اللهم إني أسألك المعرفة التي تعود بالنفع ومؤازرته وهو أمر جيد والأفعال التي هي مقبولة",
 				"اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ",
-				"اللَّهُمَّ بِكَ أَحُولُ وَبِكَ أَصُولُ وَبِكَ أُقَاتِلُ "};
+		"اللَّهُمَّ بِكَ أَحُولُ وَبِكَ أَصُولُ وَبِكَ أُقَاتِلُ "};
 		String[] txt={"O Allah,  I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.(To be said after giving salam for the fajr prayer)",
 				"O Allah, save me from the fire.",
 				"O Allah, grant me the achievements of my goals for it is only with Your aid that I can attack the enemy and with Your assistance that I can declare Jihaad on them(After forenoon prayer)"
-				};
+		};
 		UserModel[] userlist=new UserModel[names.length];
 		for (int i = 0; i < txt.length; i++) {
 			userlist[i]=new UserModel(names[i],txt[i]);
@@ -51,7 +58,7 @@ public class AdkarListViewAfterPrayer extends ActionBarActivity {
 		if (id == R.id.action_settings) {
 			finish();
 			startActivity(getIntent());
-			Toast.makeText(getApplicationContext(), "Refreshed..", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "Refreshing..", Toast.LENGTH_SHORT).show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

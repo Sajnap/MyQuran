@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 public class UserAdapter extends ArrayAdapter<String>{
 
-	
 	Context myContext;
 
 	public UserAdapter(Context context, QuranUserModel[] userModels) {
@@ -40,16 +39,10 @@ public class UserAdapter extends ArrayAdapter<String>{
 		}
 
 		TextView nameTextView = (TextView) convertView.findViewById(R.id.textView3);
-		//TextView txtTextView = (TextView) convertView.findViewById(R.id.textView4);
-		//ImageView iconImageView = (ImageView) convertView.findViewById(R.id.imageView_photo);
-
-		
-		//txtTextView.setText(usersList[position].getEmail());
-
 		convertView.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
+				//Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
 			}
 		});
 		return convertView;

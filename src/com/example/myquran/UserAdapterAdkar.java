@@ -41,8 +41,7 @@ public class UserAdapterAdkar extends ArrayAdapter<UserModel>{
 
 		TextView nameTextView = (TextView) convertView.findViewById(R.id.textView3);
 		TextView txtTextView = (TextView) convertView.findViewById(R.id.textView4);
-		//		ImageView iconImageView = (ImageView) convertView.findViewById(R.id.imageView_photo);
-
+		
 		nameTextView.setText(usersList[position].getName());
 		txtTextView.setText(usersList[position].getEmail());
 	
@@ -50,7 +49,7 @@ public class UserAdapterAdkar extends ArrayAdapter<UserModel>{
 			@Override
 			public void onClick(View v) {
 				
-				Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
+//				Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
 			}
 		});
 		return convertView;

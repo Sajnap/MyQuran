@@ -37,15 +37,6 @@
         android:textColor="#E0DA7C"
         android:text="@string/copy_right" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:src="@drawable/quran" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -57,5 +48,14 @@
         android:textColor="#E0DA7C"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/qq" />
 
 </RelativeLayout>

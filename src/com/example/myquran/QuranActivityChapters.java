@@ -2,24 +2,33 @@ package com.example.myquran;
 
 import java.util.ArrayList;
 
-import android.content.Intent;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.ZoomControls;
 
 public class QuranActivityChapters extends ActionBarActivity {
 
+	ZoomControls zoom;
 	ListView lvList;
 	String [] ChapterName,idName;
 	String Cname,CID,IntentValue;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.quranz);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
 		setContentView(R.layout.quran_chapter);
+		zoom = (ZoomControls) findViewById(R.id.zoomControls1);
 		lvList=(ListView) findViewById(R.id.my_main_listview);
 		ChapterName    = getResources().getStringArray(R.array.quranList);
 		ArrayList<String> Qname = new ArrayList<String>();
@@ -29,7 +38,37 @@ public class QuranActivityChapters extends ActionBarActivity {
 		IntentValue=IntentValue.replace(" ", "");
 		int chapterNo=Integer.parseInt(IntentValue);
 		int tempChapterNo=0;
+		
+		zoom.setOnZoomInClickListener(new OnClickListener() {
 
+			@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				float x = lvList.getScaleX();
+				float y = lvList.getScaleY();
+
+				lvList.setScaleX((float) (x+0.50));
+				lvList.setScaleY((float) (y+0.50));
+			}
+		});
+		
+		zoom.setOnZoomOutClickListener(new View.OnClickListener() {
+
+			@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+
+				float x = lvList.getScaleX();
+				float y = lvList.getScaleY();
+
+				lvList.setScaleX((float) (x-0.50));
+				lvList.setScaleY((float) (y-0.50));
+			}
+		});
 
 		for (int i = 0; i < ChapterName.length; i++) {
 
@@ -50,76 +89,8 @@ public class QuranActivityChapters extends ActionBarActivity {
 		}
 		ArrayAdapter<String>	adapter = new ArrayAdapter(QuranActivityChapters.this, android.R.layout.simple_list_item_1,Qname);
 		lvList.setAdapter(adapter);
-
-
-		//new MyDBLoaderAsync().execute();
-	}
-	/*
-	private class MyDBLoaderAsync extends AsyncTask<Void, Void, String>{
-		ListView myListView;
-		ArrayList<String> data;
-
-		@Override
-		protected void onPreExecute() {
-			myListView=(ListView) findViewById(R.id.my_main_listview);
-			dbh=new DataBaseHelper(getApplicationContext());
-		}
-
-		@Override
-		protected String doInBackground(Void... params) {
-			try {
-				dbh.onCreate(null);
-				Cursor c=null;
-				data=new ArrayList<String>();
-				dbh.openDataBase();
-				c=dbh.viewdata();
-				if(c!=null)
-				{
-					if(c.moveToFirst())
-					{
-						int n, p;
-						String m;
-						do {
-							n=c.getInt(c.getColumnIndex("LanguageNo"));
-							p=c.getInt(c.getColumnIndex("chapterID"));
-							m=c.getString(c.getColumnIndex("SuraName"));
-							data.add("Language: "+n+"\n Chapter: "+p+"\nSura Name: "+m);
-						}while(c.moveToNext());
-					} else {
-						runOnUiThread(new Runnable() {
-							public void run() {
-								Toast.makeText(getApplicationContext(),"Empty database",Toast.LENGTH_SHORT).show();
-							}
-						});
-					}
-				} else {
-					runOnUiThread(new Runnable() {
-						public void run() {
-							Toast.makeText(getApplicationContext(),"No Such table found!!",Toast.LENGTH_SHORT).show();
-						}
-					});
-				}		
-			} catch (final Exception e) {
-				runOnUiThread(new Runnable() {
-					public void run() {
-						Toast.makeText(getApplicationContext(),"Exception\n -- No database",Toast.LENGTH_LONG).show();
-						e.printStackTrace();
-					}
-				});
-			}
-
-			return null;
-		}
-
-		@Override
-		protected void onPostExecute(String result) {
-			if (result!=null) {
-				ArrayAdapter<String> adapter=new ArrayAdapter<String>(QuranActivity.this,android.R.layout.simple_list_item_1,data);
-				myListView.setAdapter(adapter);	
-			}
-		}
-
-	}*/
+}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -136,7 +107,7 @@ public class QuranActivityChapters extends ActionBarActivity {
 
 			finish();
 			startActivity(getIntent());
-			Toast.makeText(getApplicationContext(), "Refreshed..", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "Refreshing..", Toast.LENGTH_SHORT).show();
 		default:
 			break;
 		}

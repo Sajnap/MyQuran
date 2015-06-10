@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="right"
-            android:text="04:47 AM"
+            android:text="03:49 PM"
             android:textColor="#E0DA7C"
             android:textSize="20sp"
             android:textStyle="bold" />

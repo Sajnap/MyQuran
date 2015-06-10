@@ -23,24 +23,36 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
         android:layout_weight="1.0"
         android:background="#407B7950"
+        android:onClick="adkarButton"
         android:text="@string/adkar"
+        android:textColor="#E0DA7C"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1.0"
+        android:background="#407B7950"
+        android:text="@string/islam"
         android:layout_marginBottom="5dp"
         android:textColor="#E0DA7C"
-        android:onClick="adkarButton"
+        android:onClick="aboutIslam"
         android:textSize="12sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
         android:layout_weight="1.0"
         android:background="#407B7950"
-        android:text="@string/prayer_time"
-        android:layout_marginBottom="5dp"
-        android:textColor="#E0DA7C"
         android:onClick="prayerTimebutton"
+        android:text="@string/prayer_time"
+        android:textColor="#E0DA7C"
         android:textSize="12sp" />
 
     <Button

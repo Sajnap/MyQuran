@@ -15,7 +15,6 @@ import android.widget.ToggleButton;
 public class LanguageSelect extends ActionBarActivity {
 
 	boolean toggleState;
-	//TextView text;
 	TextView text1;
 	String lang;
 	String lang1;
@@ -25,7 +24,6 @@ public class LanguageSelect extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lang_select);
-		//text = (TextView) findViewById(R.id.textView3);
 		text1 = (TextView) findViewById(R.id.textView1);
 		ToggleButton tg = (ToggleButton) findViewById(R.id.switch1);
 		sharedPreferences = getApplicationContext().getSharedPreferences("toggleState",Context.MODE_PRIVATE);
@@ -80,29 +78,4 @@ public class LanguageSelect extends ActionBarActivity {
 		startActivity(new Intent(this, HomePage.class));
 		finish();		
 	}
-
-
-	//	public void onResume() {
-	//		super.onResume();
-	//
-	//		toggleState = sharedPreferences.getBoolean("toggleState", false);
-	//		//Log.v("toggleState", Boolean.toString(toggleState));
-	//
-	//		if (toggleState) {
-	//			toggleButton.setChecked(true);
-	//			text.setText("ON");
-	//		} else {
-	//			toggleButton.setChecked(false);
-	//			text.setText("OFF");
-	//		}
-	//
-	//		toggleButton.setChecked(toggleState);
-	//		toggleButton.setOnCheckedChangeListener((OnCheckedChangeListener) this);         
-	//	}
-	//	@Override
-	//	protected void onPause() {
-	//		super.onPause();             
-	//		toggleButton.setOnCheckedChangeListener(null);
-	//	} 
-
 }

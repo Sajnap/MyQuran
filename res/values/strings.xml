@@ -11,6 +11,7 @@
     <string name="prayer_time">Prayer Time</string>
     <string name="zakt_calculator">Zakkath Calculator</string>
     <string name="about_app">About the App</string>
+     <string name="islam">About Islam</string>
     <string name="my_quran">My Quran</string>
     <string name="cash_in_bank">Cash in Bank in Savings Account</string>
     <string name="cash_in_hand">Cash in Hand</string>
@@ -30,6 +31,7 @@
     <string name="wakingup_dua">Waking up Supplications</string>
     <string name="enter_mosque">Dua to enter the Mosque</string>
     <string name="after_prayer">Supplicatons after Prayer</string>
-    <string name="about_app_details">This application contains all the chapters of the Quran, Adkar, Prayer time and Zakkat Calculator. Adkar help muslims read their daily prayers. And provides islamic prayer times. Also calculation of Zakat varies for different assets and liabilities.</string>
-
+    
+	
+    
 </resources>

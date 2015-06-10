@@ -9,18 +9,6 @@
     tools:context="com.example.myquran.HomePage" >
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.50"
-        android:gravity="center"
-        android:text="@string/zakt_calculator"
-        android:textColor="#663737"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
